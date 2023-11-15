@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="app.css">
+        <title>Mahsa Vahidinasab</title>
+        <script src="jquery-3.6.0.js"></script> 
+        <script> 
+            $(function(){
+            $("#includedContent").load("header.html"); 
+            });
+        </script> 
+    </head>
+    <body>
+        <div id="includedContent"></div>
+        <text id="greetings">Hey, I'm Mahsa.</text>
+        <text id="biography">A Python backend developer from Iran, Tehran. I also know a bit about web development.</text>
+        <button onclick="openProject()">My Projects&nbsp&nbsp&nbsp&#62&#62</button>
+        <div id="imageDiv">
+            <img id="image" src="Mahsa1.jpeg"/>
+        </div>
+    </body>
+    <script>
+        function openProject()
+        {
+            window.open("project.html");
+        }
+    </script>
+
+
+    
+</html>

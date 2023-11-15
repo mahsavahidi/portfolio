@@ -1,0 +1,1 @@
+buttonFunction = () => document.getElementById('h1').innerHTML = "hi";

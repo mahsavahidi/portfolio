@@ -1,0 +1,41 @@
+@font-face {
+    font-family: famiarMedium;
+    src: url(./fonts/FamiarPERSONALUSEONLY-Medium.otf);
+}
+@font-face {
+    font-family: famiarLight;
+    src: url(./fonts/FamiarPERSONALUSEONLY-Light.otf);
+}
+#image {
+    /* position: absolute; */
+    /* text-align: center; */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    right: 25px;
+    top: 25px;
+    width: 200px;
+    position: absolute;
+}
+#imageBackground {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.189);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    color: whitesmoke;
+    font-family: famiarLight;
+    left: 60px;
+    top: 20px;
+    /* position: relative; */
+}
+.detail {
+    /* position: relative; */
+    /* font-family: famiarLight; */
+    left: 80px;
+    top: 10px;
+    color: rgb(188, 184, 179);
+}

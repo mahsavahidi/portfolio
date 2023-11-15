@@ -1,0 +1,83 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:  rgb(36, 35, 38);
+    /* background-image: linear-gradient(to bottom right, black, rgba(167, 165, 165, 0.529)); */
+}
+@font-face {
+    font-family: famiarMedium;
+    src: url(./fonts/FamiarPERSONALUSEONLY-Medium.otf);
+}
+@font-face {
+    font-family: famiarLight;
+    src: url(./fonts/FamiarPERSONALUSEONLY-Light.otf);
+}
+#header {
+    position: sticky;
+}
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+#name{
+    position: absolute;
+    /* font-family: famiarMedium; */
+    font-size: large;
+    color: whitesmoke;
+    top: 60px;
+    left: 60px;
+    cursor: pointer;
+    
+}
+#underline {
+    position: relative;
+    width: 40px;
+    height: 5px;
+    top: 85px;
+    left: 60px;
+    border-radius: 20px;
+    transition: 1s;
+    background-color: rgb(24, 84, 143);
+}
+#name:hover + #underline {
+    width: 182px;
+}
+ul {
+    list-style-type: none;
+    margin: 60px;
+    text-align: right;
+    font-family: famiarLight;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    
+  }
+  
+  li {
+    display: inline;
+    margin: 20px;
+    
+  }
+  
+  a {
+      color: rgb(188, 184, 179);
+      display: inline-block;
+      font-size: large;
+      text-decoration: none;
+      background-image: linear-gradient(to right, rgb(24, 84, 143), rgb(24, 84, 143));
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      background-size: 0px 2px;
+      transition: background-size .5s ease;
+      
+  }
+  
+    a:hover {
+      background-size: 100% 2px;
+      text-decoration: none;
+      color: rgb(179, 180, 188);
+    }
+    
