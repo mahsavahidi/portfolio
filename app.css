@@ -1,0 +1,64 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:  rgb(36, 35, 38);
+    /* background-image: linear-gradient(to bottom right, black, rgba(167, 165, 165, 0.529)); */
+}
+@font-face {
+    font-family: famiarMedium;
+    src: url(./fonts/FamiarPERSONALUSEONLY-Medium.otf);
+}
+@font-face {
+    font-family: famiarLight;
+    src: url(./fonts/FamiarPERSONALUSEONLY-Light.otf);
+}
+
+#greetings {
+    position: relative;
+    left: 60px;
+    top: 130px;
+    font-family: famiarMedium;
+    font-size: xxx-large;
+    color: whitesmoke;
+}
+#biography {
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    width: 40%;
+    text-align: left;
+    font-family: famiarLight;
+    font-size: x-large;
+    color: rgb(188, 184, 179);
+}
+button {
+    position: absolute;
+    top: 600px;
+    left: 60px;
+    background-color: rgb(24, 84, 143);
+    border-radius: 30px;
+    font-family: famiarLight;
+    font-size: x-large;
+    border: none;
+    padding: 15px 30px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+#imageDiv {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.189);
+    width: 400px;
+    height: 400px;
+    right: 70px;
+}
+#image {
+    position: relative;
+    width: 350px;
+    height: 425px;
+    top: 25px;
+    left: 25px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
