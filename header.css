@@ -26,6 +26,7 @@ body {
     position: absolute;
     /* font-family: famiarMedium; */
     font-size: large;
+    text-decoration: none;
     color: whitesmoke;
     top: 60px;
     left: 60px;
@@ -62,7 +63,7 @@ ul {
     
   }
   
-  a {
+  .links {
       color: rgb(188, 184, 179);
       display: inline-block;
       font-size: large;
@@ -75,7 +76,7 @@ ul {
       
   }
   
-    a:hover {
+    .links:hover {
       background-size: 100% 2px;
       text-decoration: none;
       color: rgb(179, 180, 188);
