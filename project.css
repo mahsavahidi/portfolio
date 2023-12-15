@@ -1,0 +1,29 @@
+@font-face {
+    font-family: famiarMedium;
+    src: url(./fonts/FamiarPERSONALUSEONLY-Medium.otf);
+}
+@font-face {
+    font-family: famiarLight;
+    src: url(./fonts/FamiarPERSONALUSEONLY-Light.otf);
+}
+
+h3 {
+    font-family: famiarMedium;
+    color: whitesmoke;
+    margin-left: 50px;
+}
+.p {
+    font-family: famiarLight;
+    color: whitesmoke;
+    margin-left: 80px;
+}
+img {
+    border-radius: 50px;
+    padding: 20px;
+    margin-left: 70px;
+}
+h1 {
+    font-family: famiarMedium;
+    color: whitesmoke;
+    text-align: center;
+}
