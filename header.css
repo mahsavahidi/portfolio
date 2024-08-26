@@ -14,6 +14,9 @@ body {
     font-family: famiarLight;
     src: url(./fonts/FamiarPERSONALUSEONLY-Light.otf);
 }
+.icon {
+    display: none;
+}
 div.header {
     
     position: -webkit-sticky;
