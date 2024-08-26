@@ -14,6 +14,13 @@ body {
     font-family: famiarLight;
     src: url(./fonts/FamiarPERSONALUSEONLY-Light.otf);
 }
+#includedContent {
+    height: 50%; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
 
 #greetings {
     position: relative;
@@ -33,32 +40,61 @@ body {
     font-size: x-large;
     color: rgb(188, 184, 179);
 }
-button {
+#button {
     position: absolute;
     top: 600px;
     left: 60px;
     background-color: rgb(24, 84, 143);
     border-radius: 30px;
     font-family: famiarLight;
-    font-size: x-large;
+    font-size: 20px;
     border: none;
     padding: 15px 30px;
-    color: whitesmoke;
+    color: rgb(188, 184, 179);
     cursor: pointer;
 }
-#imageDiv {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.189);
-    width: 400px;
-    height: 400px;
-    right: 70px;
-}
+
 #image {
-    position: relative;
+    position: absolute;
     width: 350px;
     height: 425px;
-    top: 25px;
-    left: 25px;
+    top: 150px;
+    right: 70px;
+    box-shadow: -10px 0px 10px 10px rgb(33, 31, 31);
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+}
+@media screen and (max-width: 600px) {
+    #imageDiv{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+    }
+    #image{
+        width: 75%;
+        position: relative;
+        height: auto;
+        right: auto;
+        top: 100px;
+        /* text-align: center; */
+    }
+    #greetings {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: auto;
+        top: 470px;
+    }
+    #biography {
+        width: 90%;
+        text-align: left;
+        left: 30px;
+        top: 550px;
+    }
+    #button {
+        position: absolute;
+        top: 800px;
+        left: 27%;
+    }
 }

@@ -14,21 +14,25 @@ body {
     font-family: famiarLight;
     src: url(./fonts/FamiarPERSONALUSEONLY-Light.otf);
 }
-#header {
+div.header {
+    
+    position: -webkit-sticky;
     position: sticky;
-}
-/* .sticky {
-    position: fixed;
     top: 0;
-    width: 100%;
-  } */
+    
+    height: 80px;
+    background-image: linear-gradient(to bottom,rgba(10,10,10,0.7), rgba(10,10,10,0));
+    border-radius: 25px;
+    
+}
+
 #name{
     position: absolute;
     /* font-family: famiarMedium; */
     font-size: large;
     text-decoration: none;
     color: whitesmoke;
-    top: 60px;
+    top: 30px;
     left: 60px;
     cursor: pointer;
     
@@ -37,7 +41,7 @@ body {
     position: relative;
     width: 40px;
     height: 5px;
-    top: 85px;
+    top: 55px;
     left: 60px;
     border-radius: 20px;
     transition: 1s;
@@ -46,14 +50,14 @@ body {
 #name:hover + #underline {
     width: 182px;
 }
+
 ul {
+   
     list-style-type: none;
-    margin: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
     text-align: right;
     font-family: famiarLight;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
     
   }
   
@@ -82,3 +86,52 @@ ul {
       color: rgb(179, 180, 188);
     }
     
+    @media screen and (max-width: 600px) {
+        #name {
+            width: 100%;
+            text-align: left;
+            left: 20px;
+        }
+        #underline {
+            left: 20px;
+            text-align: center;
+        }
+        ul {
+            display: none;
+            
+        }
+        
+        div.header {
+            position: relative;
+        }
+        a.icon {
+            background: transparent;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          #icon {
+            color: white;
+            padding: 30px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            display: block;
+            position: absolute;
+          }
+          #myLinks {
+            display: none;
+            position: relative;
+            background-color: rgba(179, 180, 188, 0.1);
+            min-width: 160px;
+            width: 50px;
+            height: auto;
+            z-index: 1;
+            text-align: right;
+            left: 50%;
+          }
+          li a{
+            padding-top: 20px;
+          }
+        
+    }

@@ -10,23 +10,22 @@
             $("#includedContent").load("header.html"); 
             });
         </script> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div id="includedContent"></div>
+        
+        <div id="imageDiv"><img id="image" src="Mahsa1.jpeg"/></div>
         <text id="greetings">Hey, I'm Mahsa.</text>
         <text id="biography">A Python backend developer from Montreal, Canada. As you can see I know frontend too :D. <br> If you want to know more about me please switch between the options that you have in the header.</text>
-        <button onclick="openProject()">My Projects&nbsp&nbsp&nbsp&#62&#62</button>
-        <div id="imageDiv">
-            <img id="image" src="Mahsa1.jpeg"/>
-        </div>
+        <button id="button" type="button" onclick="window.open('project.html')">My Projects&nbsp&nbsp&nbsp&#62&#62</button>
+        <div id="includedContent"></div>
+      
+        
+        
     </body>
-    <script>
-        function openProject()
-        {
-            window.open("project.html");
-        }
-    </script>
-
-
     
 </html>

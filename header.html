@@ -2,21 +2,32 @@
     <head>
         <title>Mahsa Vahidinasab</title>
         <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div id="header">
+        <div class="header">
             <a id="name" href="index.html">MAHSA VAHIDINASAB</a>
             <div id="underline"></div>
+            <ul id="myLinks">
+                <li><a class ="links" href="project.html">Projects</a></li>
+                <li><a class ="links" href="contact.html">Contact</a></li>
+                <li><a class ="links" href="about.html">About</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </div>
         
-        <ul>
-            <li><a class ="links" href="project.html">Projects</a></li>
-            <li><a class ="links" href="contact.html">Contact</a></li>
-            <li><a class ="links" href="about.html">About</a></li>
-            <li><a class ="links" href="blog.html">blog</a></li>
-        </ul>
+        
     </body>
     <script>
-        
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
     </script>
 </html>

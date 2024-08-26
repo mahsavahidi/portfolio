@@ -6,9 +6,16 @@
     font-family: famiarLight;
     src: url(./fonts/FamiarPERSONALUSEONLY-Light.otf);
 }
+#includedContent {
+    height: 100%; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
 #image {
-    /* position: absolute; */
-    /* text-align: center; */
+
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     right: 25px;
@@ -24,17 +31,17 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 80px;
 }
 .title {
     color: whitesmoke;
     font-family: famiarLight;
     left: 60px;
     top: 20px;
-    /* position: relative; */
+    
 }
 .detail {
-    /* position: relative; */
-    /* font-family: famiarLight; */
+    
     left: 80px;
     top: 10px;
     color: rgb(188, 184, 179);
